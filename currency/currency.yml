@@ -1,0 +1,22 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: currency
+
+  data:
+    mongodb:
+      authentication-database: admin
+      username: rootuser
+      password: rootpass
+      database: currency
+      port: 27017
+      host: currency-database
+
+currency:
+  base-url: "https://api.apilayer.com/fixer/convert?"
+  key: "p8vEn7uXb4MVTM9uwLnMstQozXxXC12A"
+  fixedRate: 3600000
+  from: "USD"
+  to: "BYN"
+  amount: 1.00
