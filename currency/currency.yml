@@ -3,7 +3,12 @@ server:
 spring:
   application:
     name: currency
-
+  eureka:
+    client:
+      service-url:
+        defaultZone: ${EUREKA_URL}
+    instance:
+      instance-id: ${spring.application.name}:${random.uuid}
   data:
     mongodb:
       authentication-database: admin
