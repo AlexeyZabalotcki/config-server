@@ -9,6 +9,8 @@ spring:
         defaultZone: ${EUREKA_URL}
     instance:
       instance-id: ${spring.application.name}:${random.uuid}
+  kafka:
+    bootstrapServers: ${KAFKA_PORT}
   redis:
     host: redis
     port: 6379
