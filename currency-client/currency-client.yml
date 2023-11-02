@@ -18,7 +18,7 @@ spring:
       properties:
        spring.json.trusted.packages: '*'
        spring.json.use.type.headers: false
-       spring.deserializer.key.delegate.class: org.apache.kafka.common.serialization.StringDeserializer
+       spring.deserializer.key.delegate.class: org.apache.kafka.common.serialization.JsonDeserializer
        spring.deserializer.value.delegate.class: org.springframework.kafka.support.serializer.JsonDeserializer
     producer:
       bootstrapServers: kafka:9092
