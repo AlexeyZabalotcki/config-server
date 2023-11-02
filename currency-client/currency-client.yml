@@ -23,13 +23,13 @@ spring:
     producer:
       bootstrapServers: kafka:9092
       auto-offset-reset: earliest
-#      key-deserializer: org.springframework.kafka.support.serializer.ErrorHandlingDeserializer
-#      value-deserializer: org.springframework.kafka.support.serializer.ErrorHandlingDeserializer
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
       properties:
         spring.json.trusted.packages: '*'
         spring.json.use.type.headers: false
-        spring.deserializer.key.delegate.class: org.apache.kafka.common.serialization.StringSerializer
-        spring.deserializer.value.delegate.class: org.springframework.kafka.support.serializer.JsonSerializer
+        spring.serializer.key.delegate.class: org.apache.kafka.common.serialization.StringSerializer
+        spring.serializer.value.delegate.class: org.springframework.kafka.support.serializer.JsonSerializer
     topics:
       message: message
 
