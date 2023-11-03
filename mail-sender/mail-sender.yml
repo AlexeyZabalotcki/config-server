@@ -2,7 +2,7 @@ server:
   port: 8083
 spring:
   application:
-    name: mai-sender
+    name: mail-sender
   eureka:
     client:
       service-url:
