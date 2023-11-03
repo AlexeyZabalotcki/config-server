@@ -10,16 +10,16 @@ spring:
     instance:
       instance-id: ${spring.application.name}:${random.uuid}
   kafka:
-    consumer:
-      bootstrapServers: kafka:9092
-      auto-offset-reset: earliest
-      key-deserializer: org.springframework.kafka.support.serializer.ErrorHandlingDeserializer
-      value-deserializer: org.springframework.kafka.support.serializer.ErrorHandlingDeserializer
-      properties:
-       spring.json.trusted.packages: '*'
-       spring.json.use.type.headers: true
-       spring.deserializer.key.delegate.class: org.apache.kafka.common.serialization.StringDeserializer
-       spring.deserializer.value.delegate.class: org.springframework.kafka.support.serializer.JsonDeserializer
+#    consumer:
+#      bootstrapServers: kafka:9092
+#      auto-offset-reset: earliest
+#      key-deserializer: org.springframework.kafka.support.serializer.ErrorHandlingDeserializer
+#      value-deserializer: org.springframework.kafka.support.serializer.ErrorHandlingDeserializer
+#      properties:
+#       spring.json.trusted.packages: '*'
+#       spring.json.use.type.headers: true
+#       spring.deserializer.key.delegate.class: org.apache.kafka.common.serialization.StringDeserializer
+#       spring.deserializer.value.delegate.class: org.springframework.kafka.support.serializer.JsonDeserializer
     producer:
       bootstrapServers: kafka:9092
       auto-offset-reset: earliest
@@ -40,6 +40,3 @@ spring:
     client-type: lettuce #provide reactive connection
     date_format: "dd-MM-yyyy"
     time_format: "HH:mm:ss"
-
-#topic:
-#  message: message
