@@ -17,7 +17,7 @@ spring:
       value-deserializer: org.springframework.kafka.support.serializer.ErrorHandlingDeserializer
       properties:
        spring.json.trusted.packages: '*'
-       spring.json.use.type.headers: false
+       spring.json.use.type.headers: true
        spring.deserializer.key.delegate.class: org.apache.kafka.common.serialization.StringDeserializer
        spring.deserializer.value.delegate.class: org.springframework.kafka.support.serializer.JsonDeserializer
     producer:
@@ -27,7 +27,7 @@ spring:
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
       properties:
         spring.json.trusted.packages: '*'
-        spring.json.use.type.headers: false
+        spring.json.use.type.headers: true
         spring.serializer.key.delegate.class: org.apache.kafka.common.serialization.StringSerializer
         spring.serializer.value.delegate.class: org.springframework.kafka.support.serializer.JsonSerializer
     topics:
