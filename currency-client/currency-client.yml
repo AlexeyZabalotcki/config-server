@@ -23,6 +23,7 @@ spring:
     producer:
       bootstrapServers: kafka:9092
       auto-offset-reset: earliest
+      group_id: message
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
       properties:
