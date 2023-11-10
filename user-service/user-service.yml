@@ -10,6 +10,6 @@ spring:
     instance:
       instance-id: ${spring.application.name}:${random.uuid}
   r2dbc:
-    url: r2dbc:postgresql://localhost:5432/testdb
+    url: r2dbc:postgresql://postgres:5432/testdb
     username: postgres
     password: 123
