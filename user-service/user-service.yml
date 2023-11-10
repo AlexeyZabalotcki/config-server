@@ -9,3 +9,7 @@ spring:
         defaultZone: ${EUREKA_URL}
     instance:
       instance-id: ${spring.application.name}:${random.uuid}
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5432/testdb
+    username: postgres
+    password: 123
