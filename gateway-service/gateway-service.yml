@@ -1,0 +1,51 @@
+server:
+  port: 8080
+
+security:
+  jwt:
+    secret: ${JWT_SECRET:2F413F4428472B4B61645367566B5970337336763979244226452948404D6351}
+
+eureka:
+  client:
+    service-url:
+      defaultZone: ${EUREKA_URL}
+
+spring:
+  application:
+    name: gateway-service
+
+  cloud:
+    gateway:
+      globalcors:
+#        cors-configurations:
+#          '[/**]':
+#            allowedOrigins: "http://localhost:8089/"
+#            allowedHeaders: "*"
+#            allowedMethods: "*"
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: users
+          uri: ${service-lb-urls.users}
+          predicates:
+            - Path=/users/**
+          filters:
+            - RewritePath=/users(?<remaining>.*), /api/v1/users${remaining}
+        - id: client
+          uri: ${service-lb-urls.client}
+          predicates:
+            - Path=/client/**
+          filters:
+            - RewritePath=/client(?<remaining>.*), /api/v1/client${remaining}
+        - id: currency
+          uri: ${service-lb-urls.currency}
+          predicates:
+            - Path=/currency/**
+          filters:
+            - RewritePath=/currency(?<remaining>.*), /api/v1/currency{remaining}
+
+service-lb-urls:
+  users: lb://user-service
+  client: lb://currency-client
+  currency: lb://currency
