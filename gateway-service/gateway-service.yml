@@ -38,14 +38,14 @@ spring:
             - Path=/client/**
           filters:
             - RewritePath=/client(?<remaining>.*), /api/v1/client${remaining}
-        - id: currency
-          uri: ${service-lb-urls.currency}
-          predicates:
-            - Path=/currency/**
-          filters:
-            - RewritePath=/currency(?<remaining>.*), /api/v1/currency{remaining}
+#        - id: currency
+#          uri: ${service-lb-urls.currency}
+#          predicates:
+#            - Path=/currency/**
+#          filters:
+#            - RewritePath=/currency(?<remaining>.*), /api/v1/currency{remaining}
 
 service-lb-urls:
   users: lb://user-service
   client: lb://currency-client
-  currency: lb://currency
+#  currency: lb://currency
