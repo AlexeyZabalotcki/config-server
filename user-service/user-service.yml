@@ -13,6 +13,9 @@ spring:
     url: r2dbc:postgresql://users-database:5432/users
     username: postgres
     password: 123
+  liquibase:
+    change-log: db/changelog/db.changelog-master.yaml
+    enabled: true
 
 security:
   jwt:
