@@ -36,3 +36,7 @@ spring:
     client-type: lettuce #provide reactive connection
     date_format: "dd-MM-yyyy"
     time_format: "HH:mm:ss"
+
+logging:
+  level:
+    org.springframework.data.cassandra: DEBUG
