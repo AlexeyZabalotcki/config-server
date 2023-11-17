@@ -9,13 +9,14 @@ spring:
         defaultZone: ${EUREKA_URL}
     instance:
       instance-id: ${spring.application.name}:${random.uuid}
-  cassandra:
-    keyspace-name: cassandra
-    contact-points: cassandra
-    port: 9042
-    username: cassandra
-    password: pass
-#    local-datacenter: datacenter1
+  data:
+    cassandra:
+      keyspace-name: cassandra
+      contact-points: cassandra
+      port: 9042
+#      username: cassandra
+#      password: pass
+    local-datacenter: datacenter1
     schema-action: CREATE_IF_NOT_EXISTS
   kafka:
     producer:
