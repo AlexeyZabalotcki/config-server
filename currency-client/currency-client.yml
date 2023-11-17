@@ -11,7 +11,7 @@ spring:
       instance-id: ${spring.application.name}:${random.uuid}
   data:
     cassandra:
-      keyspace-name: cassandra
+      keyspace-name: query
       contact-points: cassandra
       port: 9042
       username: cassandra
