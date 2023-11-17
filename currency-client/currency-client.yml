@@ -11,11 +11,11 @@ spring:
       instance-id: ${spring.application.name}:${random.uuid}
   data:
     cassandra:
-      keyspace-name: mykeyspace
+      keyspace-name: demo
       contact-points: cassandra
-      port: 9042
-      username: cassandra
-      password: pass
+#      port: 9042
+#      username: cassandra
+#      password: pass
       local-datacenter: datacenter1
       schema-action: CREATE_IF_NOT_EXISTS
   kafka:
