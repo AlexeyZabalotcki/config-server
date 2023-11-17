@@ -14,8 +14,8 @@ spring:
       keyspace-name: cassandra
       contact-points: cassandra
       port: 9042
-#      username: cassandra
-#      password: pass
+      username: cassandra
+      password: pass
     local-datacenter: datacenter1
     schema-action: CREATE_IF_NOT_EXISTS
   kafka:
