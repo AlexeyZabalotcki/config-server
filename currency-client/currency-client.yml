@@ -16,8 +16,8 @@ spring:
       port: 9042
       username: cassandra
       password: pass
-    local-datacenter: datacenter1
-    schema-action: CREATE_IF_NOT_EXISTS
+      local-datacenter: datacenter1
+      schema-action: CREATE_IF_NOT_EXISTS
   kafka:
     producer:
       bootstrapServers: kafka:9092
