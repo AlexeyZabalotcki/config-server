@@ -28,8 +28,8 @@ spring:
   mail:
     host: "smtp.gmail.com"
     port: 587
-    username: currency.converter.application@gmail.com
-    password: pfflgjzzkihpksck
+    username: "currency.converter.application@gmail.com"
+    password: "pfflgjzzkihpksck"
     default-encoding: UTF-8
     properties:
       mail:
