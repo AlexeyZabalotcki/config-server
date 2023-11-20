@@ -24,3 +24,15 @@ spring:
         spring.deserializer.value.delegate.class: org.springframework.kafka.support.serializer.JsonDeserializer
     topics:
      message: message
+
+  mail:
+    host: "smtp.gmail.com"
+    port: 587
+    username: currency.converter.application@gmail.com
+    password: currency011023@test
+    properties:
+      mail:
+        smtp:
+          starttls:
+            enable: true
+          auth: true
