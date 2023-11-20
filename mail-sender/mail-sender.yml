@@ -30,9 +30,17 @@ spring:
     port: 587
     username: currency.converter.application@gmail.com
     password: bkke sjnd yrbp erfe
+    default-encoding: UTF-8
     properties:
       mail:
+        mime:
+          charset: UTF
         smtp:
+          writetimeout: 10000
+          connectiontimeout: 10000
+          timeout: 10000
+          auth: true
           starttls:
             enable: true
-          auth: true
+            required: true
+
