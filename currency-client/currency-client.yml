@@ -18,6 +18,7 @@ spring:
       password: cassandra
       local-datacenter: datacenter1
       schema-action: CREATE_IF_NOT_EXISTS
+      create-keyspace: true
   kafka:
     producer:
       bootstrapServers: kafka:9092
