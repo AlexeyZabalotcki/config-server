@@ -11,7 +11,7 @@ spring:
       instance-id: ${spring.application.name}:${random.uuid}
   data:
     cassandra:
-      keyspace-name: mykeyspace
+      keyspace-name: query
       contact-points: cassandra
       port: 9042
       username: cassandra
@@ -20,8 +20,6 @@ spring:
       schema-action: CREATE_IF_NOT_EXISTS
       request:
         timeout: 10s
-#      schema-action: NONE
-#      create-keyspace: true
   kafka:
     producer:
       bootstrapServers: kafka:9092
@@ -48,3 +46,7 @@ spring:
 logging:
   level:
     org.springframework.data.cassandra: DEBUG
+
+currency:
+  cron: '0 */3 * * MON-FRI'
+#  cron: '0 0 13 * * MON-FRI'
