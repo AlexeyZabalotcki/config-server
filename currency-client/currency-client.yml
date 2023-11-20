@@ -12,7 +12,7 @@ spring:
   data:
     cassandra:
       keyspace-name: mykeyspace
-      contact-points: localhost
+      contact-points: cassandra
       port: 9042
       username: cassandra
       password: pass
