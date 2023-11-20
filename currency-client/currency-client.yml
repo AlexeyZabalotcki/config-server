@@ -13,7 +13,7 @@ spring:
     cassandra:
       keyspace-name: demo
       contact-points: cassandra
-#      port: 9042
+      port: 9042
 #      username: cassandra
 #      password: pass
       local-datacenter: datacenter1
