@@ -49,4 +49,6 @@ logging:
 
 currency:
 #  fixedRate: 180000
-  cron: 0 13 * * * 1-5
+  cron: 0 0 13 * * 1-5
+#  cron: 0 13 * * * 1-5
+  zone: "Europe/Minsk"
