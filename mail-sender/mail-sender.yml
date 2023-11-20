@@ -45,4 +45,5 @@ spring:
           starttls:
             enable: true
             required: true
+    subject: "Currency subscription"
 
