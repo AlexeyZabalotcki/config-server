@@ -17,8 +17,10 @@ spring:
       username: cassandra
       password: cassandra
       local-datacenter: datacenter1
-#      schema-action: NONE
       schema-action: CREATE_IF_NOT_EXISTS
+      request:
+        timeout: 10s
+#      schema-action: NONE
 #      create-keyspace: true
   kafka:
     producer:
