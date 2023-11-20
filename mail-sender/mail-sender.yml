@@ -29,7 +29,7 @@ spring:
     host: "smtp.gmail.com"
     port: 587
     username: currency.converter.application@gmail.com
-    password: currency011023@test
+    password: bkke sjnd yrbp erfe
     properties:
       mail:
         smtp:
