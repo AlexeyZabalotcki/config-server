@@ -36,6 +36,8 @@ spring:
         mime:
           charset: UTF
         smtp:
+          ssl:
+            trust: "smtp.gmail.com"
           writetimeout: 10000
           connectiontimeout: 10000
           timeout: 10000
