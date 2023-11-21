@@ -3,7 +3,6 @@ server:
 
 security:
   jwt:
-#    secret: ${JWT_SECRET:2F413F4428472B4B61645367566B5970337336763979244226452948404D6351}
     secret: ${JWT_SECRET:2AW9UBKG7ZGLLJ5W25V097ZUCEZJDT7O7KOV284EUMWQD7G9UK8Q9RFNY15D9RIUKAXQS9JVOJ1Z81KTJAG76BVY8AICAS88ZAAUJGW6FXJID00OZBQTYKGKHXMFOPT07SVNN669GFXG801TNZQW1YO467LY4VWYP0I18661GA1V94ZHZKWJ3938DRFYN8HA7ZZ5KV10XABAXNA7L1SCWG6YX7NG60QROUHQL4MH4QAVX4UL4XGGVVHNPT6AODP7}
 
 eureka:
@@ -18,11 +17,11 @@ spring:
   cloud:
     gateway:
       globalcors:
-#        cors-configurations:
-#          '[/**]':
-#            allowedOrigins: "http://localhost:8089/"
-#            allowedHeaders: "*"
-#            allowedMethods: "*"
+        cors-configurations:
+          '[/**]':
+            allowedOrigins: "http://localhost:3000"
+            allowedHeaders: "*"
+            allowedMethods: "*"
       discovery:
         locator:
           enabled: true
@@ -39,14 +38,7 @@ spring:
             - Path=/client/**
           filters:
             - RewritePath=/client(?<remaining>.*), /api/v1/client${remaining}
-#        - id: currency
-#          uri: ${service-lb-urls.currency}
-#          predicates:
-#            - Path=/currency/**
-#          filters:
-#            - RewritePath=/currency(?<remaining>.*), /api/v1/currency{remaining}
 
 service-lb-urls:
   users: lb://user-service
   client: lb://currency-client
-#  currency: lb://currency
