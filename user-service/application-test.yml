@@ -1,8 +1,8 @@
 spring:
   r2dbc:
-    url: ${spring.r2dbc.url}
-    username: ${spring.r2dbc.username}
-    password: ${spring.r2dbc.password}
-#    url: r2dbc:postgresql://users-database:5432/users
-#    username: test
-#    password: test
+#    url: ${spring.r2dbc.url}
+#    username: ${spring.r2dbc.username}
+#    password: ${spring.r2dbc.password}
+    url: r2dbc:postgresql://users-database:5432/users
+    username: test
+    password: test
