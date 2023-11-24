@@ -2,10 +2,10 @@ spring:
   data:
     mongodb:
       uri:
-#      authentication-database: admin
-#      username: test
-#      password: test
-#      port: 27017
+      authentication-database: admin
+      username: test
+      password: test
+      port: 27017
 #      host: currency-database
       database: test
       repositories:
