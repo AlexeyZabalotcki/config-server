@@ -1,12 +1,12 @@
 spring:
   data:
     mongodb:
-      authentication-database: admin
-      username: test
-      password: test
-#      database: currency
-      port: 27017
-      host: currency-database
+      uri:
+#      authentication-database: admin
+#      username: test
+#      password: test
+#      port: 27017
+#      host: currency-database
       database: test
       repositories:
         type: reactive
