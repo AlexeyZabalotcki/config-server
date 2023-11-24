@@ -10,3 +10,10 @@ spring:
       database: test
       repositories:
         type: reactive
+currency:
+  base-url: "https://api.apilayer.com/fixer/convert?"
+  key: "p8vEn7uXb4MVTM9uwLnMstQozXxXC12A"
+  fixedRate: 3600000
+  from: "USD"
+  to: "BYN"
+  amount: 1.00
