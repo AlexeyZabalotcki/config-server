@@ -1,5 +1,6 @@
 server:
   port: 0
+  token.secret: {cipher}AQCozzWp0kDt0McR6akspH1niJcXMNqI803lhuYORyvt6zqPFudlJVJJn5v+DHgGprRR5N2RndZud2kUThCl2NCi/SwjuTMnnKYhb1hdlK3pxok8LSHzSmq6Wub2op3JHAEMCH4/afYTfaBexem960cwNlRQC6tGJjltk3Hf52VL+4ingH3V2jKqlAxxxuUTVNbW1qhhOpdEfaz3OpVrgWbVrEZGxWVuzXdh6ah6MSii0AlU6lASNpnDkgQpFn1l66//hd5YcFXFJPEaxxHpAAlKotLrMi2kvVjDdHOGH1byPd01HC9+27l8kbWqcLFchHEjV6b3d4mNgebtQWTNNc1ZbDFAvAA7iYX8t4w0czm78MaPSh1m5KrH8hcTAGI2IuE=
 spring:
   application:
     name: currency
@@ -27,5 +28,4 @@ currency:
   to: "BYN"
   amount: 1.00
 
-token.secret: {cipher}AQCozzWp0kDt0McR6akspH1niJcXMNqI803lhuYORyvt6zqPFudlJVJJn5v+DHgGprRR5N2RndZud2kUThCl2NCi/SwjuTMnnKYhb1hdlK3pxok8LSHzSmq6Wub2op3JHAEMCH4/afYTfaBexem960cwNlRQC6tGJjltk3Hf52VL+4ingH3V2jKqlAxxxuUTVNbW1qhhOpdEfaz3OpVrgWbVrEZGxWVuzXdh6ah6MSii0AlU6lASNpnDkgQpFn1l66//hd5YcFXFJPEaxxHpAAlKotLrMi2kvVjDdHOGH1byPd01HC9+27l8kbWqcLFchHEjV6b3d4mNgebtQWTNNc1ZbDFAvAA7iYX8t4w0czm78MaPSh1m5KrH8hcTAGI2IuE=
 
