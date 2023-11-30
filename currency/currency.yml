@@ -13,7 +13,8 @@ spring:
     mongodb:
       authentication-database: admin
       username: rootuser
-      password: rootpass
+      password: {cipher} AQCeEsYZiktT0zhrcY56YYZRZgUNAU91nxC9loPfV/B0F9xP34QTU64m1x/fCbAtdcSBwMVi/hntzuUWD6kEqUSzSYDjuKBApEDK0HY84UsYBAHeKDKzrTX7a+Y7MHJjrwEE78OCCxhWANEkkjV5bKEEYT1srgRJHxmx4eSApd2ekDYV8mcQlNtrKyp5foq1i67D7LSpp3NOcQL+F1DiEmgT06VtcgMI236/jEtukXK9E/0k10ry2L70TQEdugaS4W6LwL5q5qezIdMnTOP+i48tXHwsPIC/ebVv6NxnzjAbYebYChCnpwX4w+qRJIusLV2QH6E1hpJ1WCkENGIXeY8WuVs5l+Y1g8olidlmeysrz4Za7H/Csc+uKIQxwkbcyKQ=
+#      password: rootpass
       database: currency
       port: 27017
       host: currency-database
