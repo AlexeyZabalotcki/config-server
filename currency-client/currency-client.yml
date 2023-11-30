@@ -15,7 +15,8 @@ spring:
       contact-points: cassandra
       port: 9042
       username: cassandra
-      password: cassandra
+      password: "{cipher}AQBcTyIO7Hs6kQP3GFMq/QYS/1VgalUjkiNgzTDbansoj+PKtYFmXY7rGlyO+jGuc0Tlz3GZel8iIOe7GgFRmSxE8sDRzM1wwSXUFPgOL2Uw542/6POJIpHELn3RfsmQr/wehO79sU98lWG9bBSlrM2hWy9jFcyjkfFJ72W+bWUcu0kgZ3hvDXb/DAAaeVU5nnuB1PTirph5QjtC0/nTvPZhjqtH2EZDO5OudQhfQUWJkN8hQQH/oMKiIV/Vv6x+gSojwJ0MBxd+o4/wJ0YuFuRK3lAEIcn9f2NTuTLo0Jugj2AbxpPmWBGPR/7mhsRpNNZ1hzBT1sx0rpnC6CNqZZ+XgaOWXCYxWnPh0NAwce5tO5HTmgUqZQY8ZOrdhK9vqC0="
+#      password: cassandra
       local-datacenter: datacenter1
       schema-action: CREATE_IF_NOT_EXISTS
       request:
