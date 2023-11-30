@@ -21,7 +21,8 @@ spring:
 
 currency:
   base-url: "https://api.apilayer.com/fixer/convert?"
-  key: "p8vEn7uXb4MVTM9uwLnMstQozXxXC12A"
+  key: "{cipher}AQBEDlBsozbz1YCYoCn/zenaoAB5eHGO+96TI0YRmaHyUjkhhMEV5pRx3u8XDcXiYarEl8v45mmtc89n8zqVbuXO70gHOhXicPZRTxXffkg94e22iIJ84s5apOD72MXHSbtdro+ui6KQS2F5+6HaTl60TEnM1pr8R58UOWMixMEyiAVN3UeJJshQTTyFwFhzXbfI2zXes+36JTsLLEhTKJAvlQs2WnOkhTUlTfo+vuDK9xr9MLq8h1+tEO7SnqbenbxeLauBy+VW35CMv2KWV8CIJ8F4FCCo1SKl6Pea0oIlr3MG6KnhOu3oeDbgn5evkl8CwEtPwAUpL4+AosLAIBFar8pKjZSf4ssVXiXSfH5zDF7FsZEZGiM7WamC/P3WrvzqBMtA44Q84nWcU7Ox4HYNICVXILh9Pn0SAt6qveXRKg=="
+#  key: "p8vEn7uXb4MVTM9uwLnMstQozXxXC12A"
   fixedRate: 3600000
   from: "USD"
   to: "BYN"
