@@ -13,7 +13,7 @@ spring:
     mongodb:
       authentication-database: admin
       username: rootuser
-      token.secret: {cipher}AQCeEsYZiktT0zhrcY56YYZRZgUNAU91nxC9loPfV/B0F9xP34QTU64m1x/fCbAtdcSBwMVi/hntzuUWD6kEqUSzSYDjuKBApEDK0HY84UsYBAHeKDKzrTX7a+Y7MHJjrwEE78OCCxhWANEkkjV5bKEEYT1srgRJHxmx4eSApd2ekDYV8mcQlNtrKyp5foq1i67D7LSpp3NOcQL+F1DiEmgT06VtcgMI236/jEtukXK9E/0k10ry2L70TQEdugaS4W6LwL5q5qezIdMnTOP+i48tXHwsPIC/ebVv6NxnzjAbYebYChCnpwX4w+qRJIusLV2QH6E1hpJ1WCkENGIXeY8WuVs5l+Y1g8olidlmeysrz4Za7H/Csc+uKIQxwkbcyKQ=
+      password: {cipher}AQCeEsYZiktT0zhrcY56YYZRZgUNAU91nxC9loPfV/B0F9xP34QTU64m1x/fCbAtdcSBwMVi/hntzuUWD6kEqUSzSYDjuKBApEDK0HY84UsYBAHeKDKzrTX7a+Y7MHJjrwEE78OCCxhWANEkkjV5bKEEYT1srgRJHxmx4eSApd2ekDYV8mcQlNtrKyp5foq1i67D7LSpp3NOcQL+F1DiEmgT06VtcgMI236/jEtukXK9E/0k10ry2L70TQEdugaS4W6LwL5q5qezIdMnTOP+i48tXHwsPIC/ebVv6NxnzjAbYebYChCnpwX4w+qRJIusLV2QH6E1hpJ1WCkENGIXeY8WuVs5l+Y1g8olidlmeysrz4Za7H/Csc+uKIQxwkbcyKQ=
 #      password: rootpass
       database: currency
       port: 27017
@@ -26,3 +26,7 @@ currency:
   from: "USD"
   to: "BYN"
   amount: 1.00
+
+token:
+  secret: {cipher}AQAYj3Z5uP0nwlt6j99IZevcpatP3S67hGIUtd7OUtSwzEF6sOax9lx+V7qpyFD3kdQkbp7UCsxv6MNxcKtJv3BOmW0vsc8ToLtgS97EgsK6er2uj3185Plt189DmjXI51uMsfvB978R93+2ErdMZsJ3EQHQ+aQqfOyrZhYmwaFtI7oM/cPuxLORxt2KQc6cIjaMqkuRunxxZGIZeCuZxQ6gX8TUauVPgbDHYlnEFTFoATBAsDh4NYWbG+QykmOem6WjKNbtr7FzVRBpb+ma28cMwaGUIVi/3LzVHjqmZBzTVaxWM5XYsjviHBblQLnAgR7lQh7hV6HtWWYUgdreNIlkQ4HlmslpnfvIlNCykon/FoC9QEwBz3OU/tCDBNr2UbnNQX7QgsmsTaAZjMw0g5YUQPIT92Iy69I9Rc2HzhvfNQ==
+
