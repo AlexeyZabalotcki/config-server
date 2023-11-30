@@ -13,7 +13,7 @@ spring:
     mongodb:
       authentication-database: admin
       username: rootuser
-      password: "{cipher}AQCeEsYZiktT0zhrcY56YYZRZgUNAU91nxC9loPfV/B0F9xP34QTU64m1x/fCbAtdcSBwMVi/hntzuUWD6kEqUSzSYDjuKBApEDK0HY84UsYBAHeKDKzrTX7a+Y7MHJjrwEE78OCCxhWANEkkjV5bKEEYT1srgRJHxmx4eSApd2ekDYV8mcQlNtrKyp5foq1i67D7LSpp3NOcQL+F1DiEmgT06VtcgMI236/jEtukXK9E/0k10ry2L70TQEdugaS4W6LwL5q5qezIdMnTOP+i48tXHwsPIC/ebVv6NxnzjAbYebYChCnpwX4w+qRJIusLV2QH6E1hpJ1WCkENGIXeY8WuVs5l+Y1g8olidlmeysrz4Za7H/Csc+uKIQxwkbcyKQ="
+      password: "{cipher}AQDGZyPbZCTq87l9b/77/WoLrjkdD8jbcrhp4SfRZUTKbUTBsCF/wfgXItnVJlMUoi7Csk9B8StDTiP+vZtk9iHev7yz7KFsYwTHZRuXnnnlSYpQzMEZRleqJH3Nh8rX6Tlx/zUq5X/F9BxulIwRWXTp8kOAQ3kf7H3ao5K9I8dTnyWfcrBgH/FiFd34rRQynbxyQ8Vr7mCGCBPYRVxWQ3nNhHIUjPLOhwNCaKoLRHC0stWnfjkEsn9vH8eEEnFf1CoU9f6GKHfqYuJ50ALgE1hgDef58+1ZLJSvgxxnqIIvLpx20RJ6GCbcBv/r6Is2/ElA/X2jgeiQ9fo7EmqycwmSC743RjSPqCniOMbrAcew/UWI2wtv/LJqouqu/9YkAyM="
 #      password: rootpass
       database: currency
       port: 27017
@@ -21,7 +21,7 @@ spring:
 
 currency:
   base-url: "https://api.apilayer.com/fixer/convert?"
-  key: "{cipher}AQADxLA9Rs/GPqAfy66mPrEGA6f6O/BXYaW0FnQ7JCWCuoASS6Rg2Av7IcNyWRaLZKCMzNBPis3nlNhPb80ommDooR6e2XWye7U31R6O6/X8ndglFz5sZCjwAUpA7ZwqxheQo8m5MhBURed5HhmOnSBLsJCjmKCKRRNX44jftOtBJg8mmT48lQWANIQdd+Oh4xuBKzx3+2GFq0af3Hbd29Pz99GRttS19bxmsnUJd49r/TrPpU625AuuAuVnPwGuWpvueoutIG48QecidyeyAclk8QcjLys9kFkWjG56KIfq9gLVOVn8TKU4+JxIncUuqIzfHqKfKLRv8OvZop8nZCj909uoDcmaGvH9QBW5NY3kYsDmiaPhJqwxIjNsPW9P6qoiUv9tDWHArXyba6D4GWIpoiqDpFsd3IQd7LX3QT9lwA=="
+  key: "{cipher}AQCBjB2WTy6oqYaQo0aLHRFu23lVwzta778/u2jrL6bhERGSW1Uelccg54+9ximpIFhE1Rn3/s4loBTV5D+YBQxm/9Xn9vp3GZhMqqrMlDSMPiAUELKrnKqV/NeSLlou7GC90A9zt/XrZkCnEf7byaGKbBjzVK1q6m2W1BfwwiOihbnD9e0knIBGh+kxR/mrz44MbZP9a7dV6CU7cc0UwHyEOt3D/qBP4I7wqPrlspfXvwrpt9CBnRhqAkWnwvEFudRmYLKiIAGk4uFZ58eOD/Hv8cMmvoxdIu13mVpu5dPJeGqHbij8BtITyQ9a4AsFnqeg5y0X7QHjJBdKOCgWoJbh0k9MwPmeGLgmwCJj5zhWThXuXwy9LuYVJuVrka6DEpuI8OwC40WaxYfu42aY6u99V2cxJ9TtdjYHSpUK3GxPMw=="
 #  key: "p8vEn7uXb4MVTM9uwLnMstQozXxXC12A"
   fixedRate: 3600000
   from: "USD"
