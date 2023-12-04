@@ -12,3 +12,7 @@ eureka:
   instance:
     hostname: localhost
 
+logging:
+  pattern:
+    # Take the span id and trace id from the Mapped Diagnostic Context (MDC) and put them into the log message.
+    level: '%5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}]'
