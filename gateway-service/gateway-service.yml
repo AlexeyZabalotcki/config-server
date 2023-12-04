@@ -46,4 +46,7 @@ service-lb-urls:
 
 logging:
   pattern:
-    level: '%5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}]'
+    level:
+    root: '%5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}]'
+    org.springframework.cloud.gateway: DEBUG
+    org.springframework.boot.autoconfigure: INFO
