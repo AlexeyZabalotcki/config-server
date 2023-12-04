@@ -44,9 +44,4 @@ service-lb-urls:
   users: lb://user-service
   client: lb://currency-client
 
-logging:
-  pattern:
-    level:
-    root: '%5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}]'
-    org.springframework.cloud.gateway: DEBUG
-    org.springframework.boot.autoconfigure: INFO
+
