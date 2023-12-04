@@ -44,4 +44,7 @@ service-lb-urls:
   users: lb://user-service
   client: lb://currency-client
 
-
+logging:
+  pattern:
+    # Take the span id and trace id from the Mapped Diagnostic Context (MDC) and put them into the log message.
+    level: '%5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}]'
